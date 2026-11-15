@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,9 @@
 
 <div class="content-box">
     <h3>Janin nettisivuharjoitus</h3>
-    <p><blockquote class="quote">
+    <blockquote class="quote">
         Kohtele muita ihmisiä, niin kuin haluaisit itseäsi kohdeltavan.
-      </blockquote></p>
+    </blockquote>
 </div>
 
     <h1 style="color: red;">Tervetuloa mun nettisivuille !</h1>
@@ -25,6 +25,14 @@
     <img src="jani.jpg" alt="Tässä on kuva minusta kesällä 2026." class="filter-image" width="300" height="400">
 </button>
 
+<div class="flex-container">
+  <div class="box">Laatikko 1</div>
+  <div class="box">Laatikko 2</div>
+  <div class="box">Laatikko 3</div>
+</div>
+
+<div class="responsive-box">Resize the window to see the effect</div>
+
     <h2>Lempiruokani</h2>
     <ol>
         <li>Aasialainen</li>
@@ -33,47 +41,73 @@
     </ol>
     
     <h2>Harrastukseni</h2>
-    <ul>
+    <ul class="harrastukset">
         <li>Lentosimulaattorit</li>
         <li>Tietokoneet</li>
         <li>Ilmailu</li>
     </ul>
   <table class="ruokataulukko">
     <tr>
-        <th>Näistä ruoista saatan pitää</th>
-        <th>Näistä ruoista ehkä pidän </th>
+        <th>Näistä ruoista pidän</th>
+        <th>Näistä ruoista en pidä </th>
     </tr>
     <tr>
         <td>Pizza, Kebab</td>
-        <td>Hampurilaine, TexMex</td>
+        <td>Aurajuusto, Kaalikaatikko</td>
     </tr>
     <tr>
-        <td>Kaalilaatikko, Mustamakkara</td>
+        <td>Hampurilainen, Texmex</td>
         <td>Maksalaatikko, Ryynimakkara</td>
     </tr>
     </table>
 
     <ul class="pseudo-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
+        <li>Tykkään strategiapeleistä</li>
+        <li>Tykkään matkustella</li>
+        <li>Tykkään lukea historiaa</li>
+        <li>Tykkään tehdä HTML websivuja</li>
       </ul>
 
+<h2>Näitä kieliä osaan</h2>
+<div class="grid-container">
+  <div class="grid-item">Finnish (äidinkieli)</div>
+  <div class="grid-item">English (erinomainen)</div>
+  <div class="grid-item">Swedish (keskiverto)</div>
+  <div class="grid-item">German (alkeet)</div>
+  <div class="grid-item">Italian (alkeet)</div>
+  <div class="grid-item">French (alkeet)</div>
+</div>
+
     <div class="laurea-link">
-        <a href="https://www.laurea.fi">Visit Laurea</a>
+        <a href="https://www.laurea.fi">Käyppähän kattomassa Laurean webbisivut</a>
     </div>
 
     <form>
-        <label for="name">Name:</label>
+        <label for="name">Nimi:</label>
         <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
+        <label for="email">Sähköposti:</label>
         <input type="email" id="email" name="email">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Lähetä">
     </form>
-    
-    
+    <header>
+  <h1>Minun nettisivuni</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">Tietoja minusta</a></li>
+    </ul>
+  </nav>
+</header>
 
-    
+<main>
+  <section id="about">
+    <h2>Tietoja minusta</h2>
+    <p>Nimeni on Jani, olen 47-vuotias. Olen syntynyt Helsingissä, Suomessa.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Copyright 2026</p>
+</footer>
+
 </body>
 </html>

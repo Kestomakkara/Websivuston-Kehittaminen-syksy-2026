@@ -95,6 +95,7 @@ table {
   background-color: lightyellow;
   color: darkblue;
   font-family: Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
 .ruokataulukko th {
@@ -141,6 +142,9 @@ h1, h2, h3, h4 {
 ol, ul {
   width: fit-content;
   margin: 0 auto;
+}
+.pseudo-list {
+  margin-bottom: 20px;
 }
 .harrastukset {
   margin-bottom: 0;
@@ -235,3 +239,37 @@ table {
         top: 0;
         color: lightgray;
       }
+      .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50%;
+  grid-gap: 5px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.grid-item {
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  margin: 20px auto 0;
+}
+
+.box {
+  background-color: #b34973;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
