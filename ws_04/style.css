@@ -146,6 +146,11 @@ ol, ul {
 .pseudo-list {
   margin-bottom: 20px;
 }
+.pseudo-list li {
+  border-radius: 8px;
+  margin: 4px 0;
+  padding: 6px 10px;
+}
 .harrastukset {
   margin-bottom: 0;
 }
@@ -208,11 +213,11 @@ table {
   }
 }
 .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
+        background-color: rgb(193, 87, 197);
       }
       
       .pseudo-list li:nth-child(even) {
-        background-color: white;
+        background-color: rgb(84, 221, 187);
       }
       .filter-image {
         filter: grayscale(100%);
@@ -272,6 +277,15 @@ table {
   padding: 20px;
   text-align: center;
   border-radius: 12px;
+  box-sizing: border-box;
+}
+
+#about,
+footer {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 
@@ -291,21 +305,21 @@ table {
 .responsive-box {
   width: 300px;
   height: 150px;
-  background-color: yellow;
+  background-color: rgb(207, 207, 95);
   transition: background-color 0.3s ease;
 }
 
 /* Small screens */
 @media (max-width: 600px) {
   .responsive-box {
-    background-color: red;
+    background-color: rgb(163, 87, 87);
   }
 }
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 900px) {
   .responsive-box {
-    background-color: blue;
+    background-color: rgb(93, 93, 209);
   }
 }
 
