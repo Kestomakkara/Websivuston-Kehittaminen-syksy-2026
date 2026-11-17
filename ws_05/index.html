@@ -7,7 +7,7 @@
     <title>Janin sivu</title>
 </head>
 
-<body>
+<body id="top">
 
 <div class="content-box">
     <h3>Janin nettisivuharjoitus</h3>
@@ -15,6 +15,15 @@
         Kohtele muita ihmisiä, niin kuin haluaisit itseäsi kohdeltavan.
     </blockquote>
 </div>
+
+<nav class="responsive-nav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">☰ Menu</button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#bottom">About</a></li>
+        <li><a href="#email">Contact</a></li>
+      </ul>
+    </nav>
 
     <h1 style="color: rgb(180, 83, 83);">Tervetuloa mun nettisivuille !</h1>
     <h2 style="color: rgb(46, 46, 207);">Tämä on Janin testisivu ! </h2>
@@ -31,8 +40,18 @@
   <div class="box">Laatikko 3</div>
 </div>
 
+<div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
+
 <div class="responsive-box">Tämän laatikon väri muuttuu kun ruudunkoko muuttuu... taikuutta !
 </div>
+
+<p class="responsive-image-caption">Tässä mä reissusta väsyneenä joskus pari vuotta sitten lentokoneessa</p>
+<img src="jani2.jpg" alt="Responsive Image" class="responsive-image">
+
+<div class="media-query-box">Muuta ikkunan kokoa nähdäksesi taikuutta!</div>
 
     <h2>Lempiruokani</h2>
     <ol>
@@ -106,9 +125,20 @@
   </section>
 </main>
 
-<footer>
+<footer id="bottom">
   <p>Copyright 2026</p>
 </footer>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menuList = document.querySelector("#primary-menu");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    menuList.classList.toggle("is-open", !isOpen);
+  });
+</script>
 
 </body>
 </html>
