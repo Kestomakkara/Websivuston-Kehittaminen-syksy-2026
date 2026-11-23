@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Janin sivu</title>
+</head>
+
+<body id="top">
+
+<div class="content-box">
+    <h3>Janin nettisivuharjoitus</h3>
+    <blockquote class="quote">
+        Kohtele muita ihmisiä, niin kuin haluaisit itseäsi kohdeltavan.
+    </blockquote>
+</div>
+
+<nav class="responsive-nav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">☰ Menu</button>
+      <ul class="nav-list" id="primary-menu">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#bottom">About</a></li>
+        <li><a href="#email">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 style="color: rgb(180, 83, 83);">Tervetuloa mun nettisivuille !</h1>
+    <h2 style="color: rgb(46, 46, 207);">Tämä on Janin testisivu ! versio 0.6</h2>
+    <h3 style="color: rgb(35, 141, 35);"> Olen ensimmäisen vuoden tietojenkäsittelyn opiskelija Laureassa. </h3>
+    <h4 style="color: rgb(122, 24, 122);"> Tässä on kuva minusta kesällä 2026. </h4>
+<div class="animation-box"></div>
+<button class="transition-button" type="button">
+    <img src="jani.jpg" alt="Tässä on kuva minusta kesällä 2026." class="filter-image" width="300" height="400">
+</button>
+
+<div class="flex-container">
+  <div class="box">Laatikko 1</div>
+  <div class="box">Laatikko 2</div>
+  <div class="box">Laatikko 3</div>
+</div>
+
+<div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
+
+<div class="responsive-box">Tämän laatikon väri muuttuu kun ruudunkoko muuttuu... taikuutta !
+</div>
+
+<p class="responsive-image-caption">Tässä mä reissusta väsyneenä joskus pari vuotta sitten lentokoneessa</p>
+<img src="jani2.jpg" alt="Responsive Image" class="responsive-image">
+
+<div class="media-query-box">Muuta ikkunan kokoa nähdäksesi taikuutta!</div>
+
+    <h2>Lempiruokani</h2>
+    <ol>
+        <li>Aasialainen</li>
+        <li>Tex-Mex</li>
+        <li>BBQ</li>
+    </ol>
+    
+    <h2>Harrastukseni</h2>
+    <ul class="harrastukset">
+        <li>Lentosimulaattorit</li>
+        <li>Tietokoneet</li>
+        <li>Ilmailu/Lentokoneet</li>
+    </ul>
+  <table class="ruokataulukko">
+    <tr>
+        <th>Näistä ruoista pidän</th>
+        <th>Näistä ruoista en pidä </th>
+    </tr>
+    <tr>
+        <td>Pizza, Kebab</td>
+        <td>Aurajuusto, Kaalikaatikko</td>
+    </tr>
+    <tr>
+        <td>Hampurilainen, Texmex</td>
+        <td>Maksalaatikko, Ryynimakkara</td>
+    </tr>
+    </table>
+
+    <ul class="pseudo-list">
+        <li>Tykkään strategiapeleistä</li>
+        <li>Tykkään matkustella</li>
+        <li>Tykkään lukea historiaa</li>
+        <li>Tykkään tehdä HTML websivuja</li>
+      </ul>
+
+<h2>Näitä kieliä osaan</h2>
+<div class="grid-container">
+  <div class="grid-item">Suomi (äidinkieli)</div>
+  <div class="grid-item">Englanti (erinomainen)</div>
+  <div class="grid-item">Ruotsi (keskiverto)</div>
+  <div class="grid-item">Saksa (alkeet)</div>
+  <div class="grid-item">Italia (alkeet)</div>
+  <div class="grid-item">Ranska (keskiverto)</div>
+</div>
+
+    <div class="laurea-link">
+        <a href="https://www.laurea.fi">Käyppähän katsomassa Laurean webbisivut</a>
+    </div>
+
+    <form>
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Lähetä">
+    </form>
+    <header>
+  <h1>Minun nettisivuni</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">Tietoja minusta</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>Tietoja minusta</h2>
+    <p>Nimeni on Jani, olen 47-vuotias. Olen syntynyt Helsingissä, Suomessa.</p>
+  </section>
+</main>
+
+<footer id="bottom">
+  <p>Copyright 2026</p>
+</footer>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menuList = document.querySelector("#primary-menu");
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    menuList.classList.toggle("is-open", !isOpen);
+  });
+</script>
+
+</body>
+</html>
