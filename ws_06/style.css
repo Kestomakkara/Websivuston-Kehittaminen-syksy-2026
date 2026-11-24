@@ -444,4 +444,9 @@ footer {
         display: block;
       }
     }
+
+.pink-column {
+  color: pink;
+  background-color: lightgreen;
+}
     
