@@ -271,6 +271,29 @@ table {
   margin: 20px auto 0;
 }
 
+.columns-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.columns-container .row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.columns-container .row > div {
+  background-color: lime;
+  border-radius: 12px;
+  width: auto;
+}
+
+@media (max-width: 767.98px) {
+  .columns-container .row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .box {
   background-color: #b34973;
   color: white;
